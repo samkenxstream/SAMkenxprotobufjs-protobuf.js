@@ -1,5 +1,48 @@
 # Changelog
 
+## [7.0.0](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/compare/v6.0.1...v7.0.0) (2023-04-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop support for Node 4, 6, 8, 10 ([#1764](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1764))
+
+### Features
+
+* accept unknown enum values in fromObject ([#1793](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1793)) ([ef24ae4](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/ef24ae4e93cf8635ff38398b37f3597e5d478330))
+* add alt-comment CLI option ([#1692](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1692)) ([7558ef0](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/7558ef0f93177978272f68f1710144a26b63e525))
+* allow message.getTypeUrl provide custom typeUrlPrefix ([#1762](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1762)) ([8aad1dd](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/8aad1dd994b1fc1f23bd71adf3a81b7a5616b210))
+* **cli:** generate static files at the granularity of proto messages ([#1840](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1840)) ([32f2d6a](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/32f2d6a68b27997bd0f7619998695a9fa7a4fd70))
+* prepare initial publication of cli ([#1752](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1752)) ([64811d5](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/64811d5878c31e4a86a39da5fec6aea35da22fcd))
+* support parsing of complex options ([#1744](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1744)) ([b1746a8](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/b1746a8c5e2b9c29644318090cc9e581f7e34b6e))
+* valuesOptions for enums ([#1358](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1358)) ([bb6b1d4](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/bb6b1d4942d924bcb4ee3ad15f4823f2d9c1ab22))
+
+
+### Bug Fixes
+
+* add import long to the generated .d.ts ([#1802](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1802)) ([7c27b5a](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/7c27b5ad5d161c9f3711aa053ca704f8e1224e90))
+* **cli:** fix relative path to Google pb files ([#1859](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1859)) ([e42eea4](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/e42eea4868b11f4a07934804a56683321ed191e2))
+* **deps:** update dependency glob to v8 ([#1750](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1750)) ([8303a64](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/8303a648bc12dcea5aa8e7efa042de39011857f9))
+* **deps:** update dependency long to v5 ([#1751](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1751)) ([dadc65e](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/dadc65e12d654f96daf83253476e55da35214904))
+* do not allow to extend same field twice to prevent the error ([#1784](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1784)) ([14f0536](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/14f05364a04fe1ca0bfb278b3407e058c6b5a1ab))
+* drop support for Node 4, 6, 8, 10 ([#1764](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1764)) ([50370dd](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/50370dd7747a0986e83ddbe51c54b97033af5ead))
+* error should be thrown ([#1817](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1817)) ([e7a3489](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/e7a34897a122342485468999a507626f1ea91507))
+* extensions broke oneof ([#1789](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1789)) ([d7f501c](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/d7f501c49d523cda423a3ab8bcaeb59a0216b350))
+* generate valid js code for aliased enum values ([#1801](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1801)) ([7120e93](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/7120e93b7980728614779c50f40877da57e3cf37))
+* proper relative path to protobufjs in cli ([#1753](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1753)) ([a1d6029](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/a1d60292ecb22fcf89c493c562ae07ab10ef49c9))
+* proto3 optional scalars should default to null in reflection API ([#1693](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1693)) ([d9144de](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/d9144dea611c9a1c0e01cc3e0e2491c6de5f9c97))
+* remove unused `@types/long` ([#1785](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1785)) ([0f4af83](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/0f4af83e4ed3cef1ec035c2833e0b06cab0bd87f))
+* replace deprecated String.prototype.substr() ([#1701](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1701)) ([e33a84a](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/e33a84a301eb6beaaa6a71a20756f0b5ccfb0459))
+* Revert "fix: error should be thrown" ([4489fa7](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/4489fa771464bcb49b57149760e9cc4131e8077e))
+* scope variable for map field to avoid redeclaration ([#1717](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1717)) ([#1718](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1718)) ([1d3c02a](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/1d3c02a89ea9ad794b454d11ca2de425db4772dd))
+* support for nested messages and enums within group blocks ([#1790](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1790)) ([f36d4e4](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/f36d4e4a2df809b47ff85f87aba319b86be90878))
+* type names can be split into multiple tokens ([#1877](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1877)) ([8817ee6](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/8817ee613dfcf55f7f6fa8704f3fdd3e68c0e1d8))
+* **types:** nested object can be a oneof ([#1812](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1812)) ([119d90a](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/119d90aa1ce14d7bff20bb1dcc1ddc4544a80c23))
+* **types:** update type deps ([#1776](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1776)) ([d87978b](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/d87978b8eb2a176676c58379a89206b94a6d926a))
+* update minimal.js to evade override mistake ([#1742](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1742)) ([e2f33a0](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/e2f33a04eddbcffcbc2ae16c72ac3820410057bc))
+* use bundled filename to fix common pb includes ([#1860](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1860)) ([dce9a2e](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/dce9a2ef92d363752e40b295b0da9bd178f82e83))
+* use ES5 style function syntax ([#1830](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/issues/1830)) ([64e8936](https://github.com/samkenxstream/SAMkenxprotobufjs-protobuf.js/commit/64e8936ad9f73c68b3fa1e57857dd38323b5a745))
+
 ## [7.2.3](https://github.com/protobufjs/protobuf.js/compare/protobufjs-v7.2.2...protobufjs-v7.2.3) (2023-03-27)
 
 
